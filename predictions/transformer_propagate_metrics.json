@@ -1,0 +1,204 @@
+{
+  "model": "google-bert/bert-base-cased",
+  "tag": "propagate",
+  "strategy": "propagate",
+  "max_len": 128,
+  "batch_size": 16,
+  "learning_rate": 3e-05,
+  "epochs": 3,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "seed": 42,
+  "device": "cuda",
+  "best_epoch": 3,
+  "best_dev_entity_f1": 0.9491525423728813,
+  "train_seconds": 636.1,
+  "train_stats": {
+    "n_sentences": 14041,
+    "truncated_sentences": 1,
+    "split_words": 34288,
+    "n_subwords": 272550,
+    "subwords_per_word": 1.3385161648356505
+  },
+  "dev_stats": {
+    "n_sentences": 3250,
+    "truncated_sentences": 4,
+    "split_words": 8218,
+    "n_subwords": 67892,
+    "subwords_per_word": 1.3218332619446282
+  },
+  "test_stats": {
+    "n_sentences": 3453,
+    "truncated_sentences": 2,
+    "split_words": 8284,
+    "n_subwords": 63438,
+    "subwords_per_word": 1.3661677613868848
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.2523362668698382,
+      "dev_loss": 0.06111551313398534,
+      "dev_token_accuracy": 0.9886491959035864,
+      "dev_token_f1": 0.9483420593368238,
+      "dev_entity_precision": 0.9377418812047787,
+      "dev_entity_recall": 0.9378996970716931,
+      "dev_entity_f1": 0.9378207824989483,
+      "train_seconds": 203.2
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.04457242281922905,
+      "dev_loss": 0.06307742616470433,
+      "dev_token_accuracy": 0.9911413106966239,
+      "dev_token_f1": 0.9595059138845191,
+      "dev_entity_precision": 0.9478641103262697,
+      "dev_entity_recall": 0.9485021878155503,
+      "dev_entity_f1": 0.9481830417227456,
+      "train_seconds": 201.7
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.020557118306971465,
+      "dev_loss": 0.058565149865542336,
+      "dev_token_accuracy": 0.9910244928157004,
+      "dev_token_f1": 0.9588563458856346,
+      "dev_entity_precision": 0.9464524765729585,
+      "dev_entity_recall": 0.9518680578929654,
+      "dev_entity_f1": 0.9491525423728813,
+      "train_seconds": 203.2
+    }
+  ],
+  "splits": {
+    "validation": {
+      "entity": {
+        "tp": 5656,
+        "fp": 320,
+        "fn": 286,
+        "precision": 0.9464524765729585,
+        "recall": 0.9518680578929654,
+        "f1": 0.9491525423728813,
+        "support": 5942,
+        "predicted": 5976
+      },
+      "by_type": {
+        "PER": {
+          "support": 1842,
+          "predicted": 1850,
+          "tp": 1792,
+          "fp": 58,
+          "fn": 50,
+          "precision": 0.9686486486486486,
+          "recall": 0.9728555917480999,
+          "f1": 0.9707475622968581
+        },
+        "ORG": {
+          "support": 1341,
+          "predicted": 1352,
+          "tp": 1251,
+          "fp": 101,
+          "fn": 90,
+          "precision": 0.9252958579881657,
+          "recall": 0.9328859060402684,
+          "f1": 0.9290753806164129
+        },
+        "LOC": {
+          "support": 1837,
+          "predicted": 1830,
+          "tp": 1779,
+          "fp": 51,
+          "fn": 58,
+          "precision": 0.9721311475409836,
+          "recall": 0.9684267827980403,
+          "f1": 0.9702754295064085
+        },
+        "MISC": {
+          "support": 922,
+          "predicted": 944,
+          "tp": 834,
+          "fp": 110,
+          "fn": 88,
+          "precision": 0.8834745762711864,
+          "recall": 0.9045553145336226,
+          "f1": 0.8938906752411576
+        }
+      },
+      "token_accuracy": 0.9910244928157004,
+      "token_prf": {
+        "tp": 8250,
+        "fp": 355,
+        "fn": 353,
+        "precision": 0.9587449157466589,
+        "recall": 0.9589678019295594,
+        "f1": 0.9588563458856346
+      },
+      "n_sentences": 3250,
+      "n_tokens": 51362
+    },
+    "test": {
+      "entity": {
+        "tp": 5203,
+        "fp": 533,
+        "fn": 445,
+        "precision": 0.9070781032078103,
+        "recall": 0.9212110481586402,
+        "f1": 0.9140899508081518,
+        "support": 5648,
+        "predicted": 5736
+      },
+      "by_type": {
+        "PER": {
+          "support": 1617,
+          "predicted": 1602,
+          "tp": 1549,
+          "fp": 53,
+          "fn": 68,
+          "precision": 0.966916354556804,
+          "recall": 0.9579468150896723,
+          "f1": 0.9624106865486177
+        },
+        "ORG": {
+          "support": 1661,
+          "predicted": 1707,
+          "tp": 1516,
+          "fp": 191,
+          "fn": 145,
+          "precision": 0.888107791446983,
+          "recall": 0.9127031908488862,
+          "f1": 0.9002375296912114
+        },
+        "LOC": {
+          "support": 1668,
+          "predicted": 1684,
+          "tp": 1558,
+          "fp": 126,
+          "fn": 110,
+          "precision": 0.9251781472684085,
+          "recall": 0.934052757793765,
+          "f1": 0.9295942720763724
+        },
+        "MISC": {
+          "support": 702,
+          "predicted": 743,
+          "tp": 580,
+          "fp": 163,
+          "fn": 122,
+          "precision": 0.7806191117092867,
+          "recall": 0.8262108262108262,
+          "f1": 0.8027681660899653
+        }
+      },
+      "token_accuracy": 0.9832238613115107,
+      "token_prf": {
+        "tp": 7577,
+        "fp": 662,
+        "fn": 535,
+        "precision": 0.919650443014929,
+        "recall": 0.9340483234714004,
+        "f1": 0.9267934682894012
+      },
+      "n_sentences": 3453,
+      "n_tokens": 46435
+    }
+  }
+}

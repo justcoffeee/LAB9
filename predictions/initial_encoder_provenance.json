@@ -1,0 +1,6 @@
+{
+  "encoder_tensors_compared": 197,
+  "missing_keys": [],
+  "all_encoder_weights_match_upstream": true,
+  "different_tensors": []
+}

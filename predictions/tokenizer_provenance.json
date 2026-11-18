@@ -1,0 +1,7 @@
+{
+  "same_vocab": true,
+  "test_sentences": 3453,
+  "same_input_ids": true,
+  "same_attention_masks": true,
+  "same_word_ids": true
+}

@@ -1,0 +1,306 @@
+{
+  "false_positives": [
+    {
+      "text": "SOCCER - JAPAN GET LUCKY WIN, CHINA IN SURPRISE DEFEAT.",
+      "gold": "JAPAN",
+      "prediction": "JAPAN (PER)",
+      "error_type": "wrong entity type",
+      "explanation": "The span matches a gold LOC entity ('JAPAN') but the model labelled it PER.",
+      "train_entity_frequency": 87
+    },
+    {
+      "text": "Burmese troops and riot police moved in to disperse a student street protest at a suburban road junction near the Ranyon ( Rangoon) University early on Saturday, witnesses said.",
+      "gold": "Ranyon ( Rangoon ) University",
+      "prediction": "Ranyon (ORG)",
+      "error_type": "wrong boundary",
+      "explanation": "Gold 'Ranyon ( Rangoon ) University' (ORG, 5 tokens); prediction 'Ranyon' differs by +0 token(s) at the start and -4 at the end.",
+      "train_entity_frequency": 0
+    },
+    {
+      "text": "SOCCER - JAPAN GET LUCKY WIN, CHINA IN SURPRISE DEFEAT.",
+      "gold": "O",
+      "prediction": "LUCKY (LOC)",
+      "error_type": "spurious entity",
+      "explanation": "No gold entity overlaps this span; the model turned 'LUCKY' into a LOC entity.",
+      "train_entity_frequency": 0
+    },
+    {
+      "text": "SOCCER - JAPAN GET LUCKY WIN, CHINA IN SURPRISE DEFEAT.",
+      "gold": "CHINA",
+      "prediction": "CHINA (ORG)",
+      "error_type": "wrong entity type",
+      "explanation": "The span matches a gold PER entity ('CHINA') but the model labelled it ORG.",
+      "train_entity_frequency": 91
+    },
+    {
+      "text": "Defender Hassan Abbas rose to intercept a long ball into the area in the 84th minute but only managed to divert it into the top corner of Bitar's goal.",
+      "gold": "Bitar",
+      "prediction": "Bitar (ORG)",
+      "error_type": "wrong entity type",
+      "explanation": "The span matches a gold PER entity ('Bitar') but the model labelled it ORG.",
+      "train_entity_frequency": 0
+    }
+  ],
+  "false_negatives": [
+    {
+      "text": "SOCCER - JAPAN GET LUCKY WIN, CHINA IN SURPRISE DEFEAT.",
+      "gold": "JAPAN (LOC)",
+      "prediction": "JAPAN (PER)",
+      "error_type": "wrong entity type",
+      "explanation": "Gold LOC 'JAPAN' overlaps a predicted PER span 'JAPAN'.",
+      "train_entity_frequency": 87
+    },
+    {
+      "text": "SOCCER - JAPAN GET LUCKY WIN, CHINA IN SURPRISE DEFEAT.",
+      "gold": "CHINA (PER)",
+      "prediction": "CHINA (ORG)",
+      "error_type": "wrong entity type",
+      "explanation": "Gold PER 'CHINA' overlaps a predicted ORG span 'CHINA'.",
+      "train_entity_frequency": 91
+    },
+    {
+      "text": "Cuttitta announced his retirement after the 1995 World Cup, where he took issue with being dropped from the Italy side that faced England in the pool stages.",
+      "gold": "1995 World Cup (MISC)",
+      "prediction": "World Cup (MISC)",
+      "error_type": "wrong boundary",
+      "explanation": "Gold span [6,9) vs predicted [7,9); overlap 2/3 gold tokens.",
+      "train_entity_frequency": 0
+    },
+    {
+      "text": "FIFA's players' status committee, meeting in Barcelona, decided that although the Udinese document was basically valid, it could not be legally protected.",
+      "gold": "Udinese (ORG)",
+      "prediction": "Udinese (MISC)",
+      "error_type": "wrong entity type",
+      "explanation": "Gold ORG 'Udinese' overlaps a predicted MISC span 'Udinese'.",
+      "train_entity_frequency": 3
+    },
+    {
+      "text": "Blinker was fined 75,000 Swiss francs ( $ 57,600) for failing to inform the Engllsh club of his previous commitment to Udinese.",
+      "gold": "Engllsh (MISC)",
+      "prediction": "Engllsh (ORG)",
+      "error_type": "wrong entity type",
+      "explanation": "Gold MISC 'Engllsh' overlaps a predicted ORG span 'Engllsh'.",
+      "train_entity_frequency": 0
+    }
+  ],
+  "boundary_errors": [
+    {
+      "text": "Cuttitta announced his retirement after the 1995 World Cup, where he took issue with being dropped from the Italy side that faced England in the pool stages.",
+      "gold": "1995 World Cup (MISC)",
+      "prediction": "World Cup (MISC)",
+      "error_type": "wrong boundary",
+      "explanation": "Gold span [6,9) vs predicted [7,9); overlap 2/3 tokens, types MISC -> MISC."
+    },
+    {
+      "text": "Stefanel Milan ( Italy) 9 6 3 15",
+      "gold": "Stefanel Milan (ORG)",
+      "prediction": "Stefanel (PER)",
+      "error_type": "wrong boundary + type",
+      "explanation": "Gold span [0,2) vs predicted [0,1); overlap 1/2 tokens, types ORG -> PER."
+    },
+    {
+      "text": "CRICKET - AUSTRALIA BEAT WEST INDIES BY FIVE WICKETS.",
+      "gold": "WEST INDIES (LOC)",
+      "prediction": "INDIES (LOC)",
+      "error_type": "wrong boundary",
+      "explanation": "Gold span [4,6) vs predicted [5,6); overlap 1/2 tokens, types LOC -> LOC."
+    },
+    {
+      "text": "All-conquering Juventus field their most recent signing, Portuguese defender Dimas, while Alessandro Del Piero and Croat Alen Boksic lead the attack.",
+      "gold": "Alen Boksic (PER)",
+      "prediction": "Croat Alen Boksic (PER)",
+      "error_type": "wrong boundary",
+      "explanation": "Gold span [18,20) vs predicted [17,20); overlap 2/3 tokens, types PER -> PER."
+    },
+    {
+      "text": "SQUASH - MAHINDRA INTERNATIONAL SEMIFINAL RESULTS.",
+      "gold": "MAHINDRA INTERNATIONAL (MISC)",
+      "prediction": "MAHINDRA (LOC)",
+      "error_type": "wrong boundary + type",
+      "explanation": "Gold span [2,4) vs predicted [2,3); overlap 1/2 tokens, types MISC -> LOC."
+    }
+  ],
+  "summary": {
+    "n_sentences": 3453,
+    "false_positives": 531,
+    "false_negatives": 458,
+    "boundary_pairs": 169,
+    "fp_error_types": {
+      "wrong entity type": 311,
+      "spurious entity": 148,
+      "wrong boundary": 72
+    },
+    "fn_error_types": {
+      "wrong entity type": 312,
+      "wrong boundary": 76,
+      "missing entity": 70
+    },
+    "rare_entity_fn": 292,
+    "seen_entity_fn": 166
+  },
+  "context_cases": [
+    {
+      "surface": "ARIZONA",
+      "types": [
+        "LOC",
+        "ORG"
+      ],
+      "examples": [
+        {
+          "sentence": "ARIZONA 6 7 0 248 332",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "DALLAS AT ARIZONA",
+          "gold_type": "LOC",
+          "predicted": "LOC",
+          "gold_tags": [
+            "B-LOC"
+          ]
+        }
+      ]
+    },
+    {
+      "surface": "ATLANTA",
+      "types": [
+        "LOC",
+        "ORG"
+      ],
+      "examples": [
+        {
+          "sentence": "ATLANTA 10 8 .556 7",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "ATLANTA 2 11 0 234 393",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "ATLANTA AT NEW ORLEANS",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "ATLANTA 10 8 .556 7",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "TORONTO AT ATLANTA",
+          "gold_type": "LOC",
+          "predicted": "LOC",
+          "gold_tags": [
+            "B-LOC"
+          ]
+        }
+      ]
+    },
+    {
+      "surface": "American",
+      "types": [
+        "MISC",
+        "ORG"
+      ],
+      "examples": [
+        {
+          "sentence": "In a statement Havel, who is recovering from cancer surgery, said: \" Madeleine Albright is a distinguished friend, a tested diplomat, and a true American of fine origins. \"",
+          "gold_type": "MISC",
+          "predicted": "MISC",
+          "gold_tags": [
+            "B-MISC"
+          ]
+        },
+        {
+          "sentence": "Britain sets conditions to clear American alliance.",
+          "gold_type": "MISC",
+          "predicted": "MISC",
+          "gold_tags": [
+            "B-MISC"
+          ]
+        },
+        {
+          "sentence": "The conditions for clearance of the alliance were that British Airways and American drop 168 slots at London Heathrow airport, the busiest in Europe.",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "American's parent, AMR Corp., said it did not view the terms as a \" deal breaker. \"",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "The government also wants British Airways to drop a clause in its agreement with USAir that bars it from competing on trans-Atlantic routes, and said both British Airways and American should be prepared to reduce services on the London to Dallas-Fort Worth route in the event that a new entrant wishes to enter.",
+          "gold_type": "ORG",
+          "predicted": "ORG",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "The Office of Fair Trade called for British Airways / American to allow third-party access to their joint frequent flyer programme where the applicant does not have access to an equivalent programme.",
+          "gold_type": "ORG",
+          "predicted": "O",
+          "gold_tags": [
+            "B-ORG"
+          ]
+        },
+        {
+          "sentence": "The chance of material heading north, talked earlier this week, may be in jeopardy now since American fuel oil is expected to head transatlantic following outages at two coking units in the U.S.",
+          "gold_type": "MISC",
+          "predicted": "MISC",
+          "gold_tags": [
+            "B-MISC"
+          ]
+        },
+        {
+          "sentence": "It was the second attack by skinheads in two years on Meyers, an American.",
+          "gold_type": "MISC",
+          "predicted": "MISC",
+          "gold_tags": [
+            "B-MISC"
+          ]
+        },
+        {
+          "sentence": "Half of dog bites provoked, says American vet.",
+          "gold_type": "MISC",
+          "predicted": "MISC",
+          "gold_tags": [
+            "B-MISC"
+          ]
+        },
+        {
+          "sentence": "In a stand some analysts linked to controversy over Singapore's caning of an American teenager for vandalism, then-U.S. Trade Representative Mickey Kantor had said the meeting ought to be held where the WTO was going to be headquartered.",
+          "gold_type": "MISC",
+          "predicted": "MISC",
+          "gold_tags": [
+            "B-MISC"
+          ]
+        }
+      ]
+    }
+  ]
+}

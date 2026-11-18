@@ -1,0 +1,13 @@
+torch>=2.2
+transformers>=4.40
+tokenizers
+safetensors
+numpy
+pandas
+pyarrow
+scikit-learn
+matplotlib
+nbformat
+nbclient
+ipykernel
+requests

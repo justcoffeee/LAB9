@@ -1,0 +1,14 @@
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights:   6%|▌         | 11/199 [00:00<00:01, 102.14it/s]
+Loading weights:  12%|█▏        | 23/199 [00:00<00:01, 109.46it/s]
+Loading weights:  17%|█▋        | 34/199 [00:00<00:02, 81.04it/s] 
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 480.27it/s]
+{'tag': 'main', 'checkpoint_sha256': 'a2cebc9c6d0121c80ac81326a5da3c8268ac90c6cd90a9741cab3255d55d4f08', 'test_sentences': 3453, 'word_prediction_mismatches': 0, 'entity_f1_recomputed': 0.9130090597238105, 'entity_f1_recorded': 0.9130090597238105, 'exact_match': True}
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights:  13%|█▎        | 25/199 [00:00<00:00, 224.72it/s]
+Loading weights:  24%|██▍       | 48/199 [00:00<00:00, 183.36it/s]
+Loading weights:  34%|███▎      | 67/199 [00:00<00:00, 172.23it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 485.62it/s]
+{'tag': 'propagate', 'checkpoint_sha256': '2958a6a161e3e2da7c6e8feb5cbdad1c095c6e0996a2285c9b27a68729bb18fc', 'test_sentences': 3453, 'word_prediction_mismatches': 0, 'entity_f1_recomputed': 0.9140899508081518, 'entity_f1_recorded': 0.9140899508081518, 'exact_match': True}

@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "strategy": "A: first subword (IGNORE rest)",
+      "epochs": 3,
+      "best_epoch": 3,
+      "best_dev_entity_f1": 0.9486,
+      "test_entity_f1": 0.913,
+      "test_precision": 0.9072,
+      "test_recall": 0.9189,
+      "subwords_per_word": 1.3385,
+      "split_words": 34288,
+      "truncated_sentences": 1,
+      "train_seconds": 630.9,
+      "notes": "3 epochs, same hyperparameters"
+    },
+    {
+      "strategy": "B: propagate I-X",
+      "epochs": 3,
+      "best_epoch": 3,
+      "best_dev_entity_f1": 0.9492,
+      "test_entity_f1": 0.9141,
+      "test_precision": 0.9071,
+      "test_recall": 0.9212,
+      "subwords_per_word": 1.3385,
+      "split_words": 34288,
+      "truncated_sentences": 1,
+      "train_seconds": 636.1,
+      "notes": "3 epochs, same hyperparameters"
+    }
+  ],
+  "f1_delta_B_minus_A": 0.0011
+}

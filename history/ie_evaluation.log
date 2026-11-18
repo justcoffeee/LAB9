@@ -1,0 +1,5 @@
+IE entity-level P=0.8955 R=0.9091 F1=0.9023 on 30 sentences
+  PERSON         F1=0.9000 support=21
+  ORGANIZATION   F1=0.5714 support=2
+  LOCATION       F1=0.9333 support=30
+  MISC           F1=0.9231 support=13

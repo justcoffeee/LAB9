@@ -1,0 +1,58 @@
+{
+  "recorded_utc": "2026-11-18T08:16:06.281104+00:00",
+  "model_id": "google-bert/bert-base-cased",
+  "model_revision": "cd5ef92a9fb2f889e972770a36d4ed042daf221e",
+  "assets": {
+    "data\\train.parquet": {
+      "url": "https://huggingface.co/datasets/eriktks/conll2003/resolve/refs%2Fconvert%2Fparquet/conll2003/train/0000.parquet",
+      "bytes": 1227788,
+      "sha256": "546cbb4200311629804a65cbe19c8846f16ab1529c4da48bcc7be8c40daf29c6"
+    },
+    "data\\validation.parquet": {
+      "url": "https://huggingface.co/datasets/eriktks/conll2003/resolve/refs%2Fconvert%2Fparquet/conll2003/validation/0000.parquet",
+      "bytes": 311883,
+      "sha256": "114dec371f357e2fa397df14311891440d0ee1030b3a2fec4025ff84b875a59d"
+    },
+    "data\\test.parquet": {
+      "url": "https://huggingface.co/datasets/eriktks/conll2003/resolve/refs%2Fconvert%2Fparquet/conll2003/test/0000.parquet",
+      "bytes": 283307,
+      "sha256": "14f894263b4ee3563395a57b8ba4cfaabec7db4ea956ba34e2f84a19781cdc43"
+    },
+    "model\\bert-base-cased\\config.json": {
+      "url": "https://huggingface.co/google-bert/bert-base-cased/resolve/cd5ef92a9fb2f889e972770a36d4ed042daf221e/config.json",
+      "bytes": 570,
+      "sha256": "8b73abed2d67075fd3ec0f840aa53d9cccdc9169c04a7da135c07e721910ed74"
+    },
+    "model\\bert-base-cased\\model.safetensors": {
+      "url": "https://huggingface.co/google-bert/bert-base-cased/resolve/cd5ef92a9fb2f889e972770a36d4ed042daf221e/model.safetensors",
+      "bytes": 435755784,
+      "sha256": "1d8bdcee6021e2c25f0325e84889b61c2eb26b843eef5659c247af138d64f050"
+    },
+    "model\\bert-base-cased\\tokenizer.json": {
+      "url": "https://huggingface.co/google-bert/bert-base-cased/resolve/cd5ef92a9fb2f889e972770a36d4ed042daf221e/tokenizer.json",
+      "bytes": 435797,
+      "sha256": "5b3360be30cdf39081153cf9d30bfb0503c011462fc9f77f097127c83ef0f4d9"
+    },
+    "model\\bert-base-cased\\tokenizer_config.json": {
+      "url": "https://huggingface.co/google-bert/bert-base-cased/resolve/cd5ef92a9fb2f889e972770a36d4ed042daf221e/tokenizer_config.json",
+      "bytes": 49,
+      "sha256": "0f6d13e6f4da6f9e24f22ada6bc3be571123d858d7c0c05a8a7cd55a9c23c2e8"
+    }
+  },
+  "source_sha256": {
+    "audit_model_provenance.py": "09ca0378e2b4c57749a6a61f154bcb466a7aeda55abfa5d2c6d471f248c08dda",
+    "baseline_ner.py": "5e5df624ab92e93b66462628554d3171d12c37e641d0ded80628ed3390a7337c",
+    "build_notebooks.py": "729d9cfcc85fc3ae88d616db729d2bf8af0bf7b8173b75aca7a646653187aa86",
+    "download_data.py": "60467551bbae45ac017055cf3b4c4a188d0c19942fdc189a11ffd3741385ba37",
+    "information_extraction.py": "5f13e4ecb8a66b0ad96dbd9843766f5c4099f8356fe4fc482589a37637ac1ff9",
+    "make_reports.py": "ae3a4be5bbf10529eab8cfab0698520e2ef52ca0bd6d15a9217d6943a1c566d1",
+    "ner_finetuning.py": "c01313edfd70b4055a72fae8c8a3f49f17976ca48d1181dc112ac702bc640fc0",
+    "ner_utils.py": "ebcd8cb07d4c11f948c73cf2de27e76d45b89fb74684a8a0beb810fa9bcfaca8",
+    "run_experiments.py": "3be80b321a686a1c623f233f23d78b1560509339dcdb6b2db0f684caf3d6bc77",
+    "validate_artifacts.py": "9f1bf71cad639579f73589f15197bf0c41a57a7981ad197797b0b97f6a4e09c3",
+    "verify_checkpoints.py": "d636f498719218a5978a88bedffb1f1ce162fe2b84ec110250b6d531b912d127",
+    "write_documentation.py": "a5c3cd2e318a8b29c5db8278bf88be00dfd61f11fb975eba7db0331acbfdddbb"
+  },
+  "prepared_initial_encoder": "197/197 encoder tensors matched original upstream exactly; see predictions/initial_encoder_provenance.json",
+  "tokenizer_equivalence": "vocabulary, input IDs, attention masks and word_ids matched upstream on all 3453 test sentences"
+}

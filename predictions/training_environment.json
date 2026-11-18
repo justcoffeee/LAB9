@@ -1,0 +1,8 @@
+{
+  "torch": "2.15.0.dev20260907+cu126",
+  "cuda": "12.6",
+  "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "python": "3.14.8 (tags/v3.14.8:8e6e75d, Sep 30 2026, 18:19:33) [MSC v.1944 64 bit (AMD64)]",
+  "max_len": 128,
+  "strategy": "propagate"
+}

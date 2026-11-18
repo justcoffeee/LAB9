@@ -1,0 +1,55 @@
+PASS deliverable exists and is non-empty: README.md
+PASS deliverable exists and is non-empty: calculations.md
+PASS deliverable exists and is non-empty: prediction.md
+PASS deliverable exists and is non-empty: baseline_ner.py
+PASS deliverable exists and is non-empty: tokenizer_alignment.ipynb
+PASS deliverable exists and is non-empty: ner_finetuning.ipynb
+PASS deliverable exists and is non-empty: results.csv
+PASS deliverable exists and is non-empty: entity_metrics.csv
+PASS deliverable exists and is non-empty: entity_length_analysis.png
+PASS deliverable exists and is non-empty: confusion_matrix.png
+PASS deliverable exists and is non-empty: error_analysis.md
+PASS deliverable exists and is non-empty: information_extraction.py
+PASS deliverable exists and is non-empty: reflection.md
+PASS confusion_matrix.png is a valid PNG
+PASS entity_length_analysis.png is a valid PNG
+PASS partial New York prediction is an entity FP and FN
+PASS baseline prediction spans match metrics JSON
+PASS baseline entity F1 recomputes exactly
+PASS transformer prediction spans match metrics JSON
+PASS transformer entity F1 recomputes exactly
+PASS results.csv contains the baseline test F1
+PASS results.csv contains the transformer test F1
+PASS entity_metrics.csv has one OVERALL row
+PASS entity_metrics.csv OVERALL F1 matches results.csv
+PASS entity_metrics.csv has all four entity types
+PASS entity_metrics.csv has all four length buckets
+PASS confusion matrix is 9x9
+PASS confusion matrix totals equal test token count
+PASS confusion matrix diagonal equals published token accuracy
+PASS confusion_matrix.json matches the .npy matrix
+PASS test_predictions.json: labels and spans agree with official test data
+PASS baseline_test_predictions.json: labels and spans agree with official test data
+PASS transformer_propagate_test_predictions.json: labels and spans agree with official test data
+PASS Strategy A alignment is exact on 1421 words
+PASS official split sizes and unique row IDs within each split
+PASS official train/validation/test file hashes match pinned assets
+PASS tokenizer_alignment.ipynb: every code cell has an execution count
+PASS tokenizer_alignment.ipynb: cells contain real outputs
+PASS tokenizer_alignment.ipynb: no execution errors
+PASS ner_finetuning.ipynb: every code cell has an execution count
+PASS ner_finetuning.ipynb: cells contain real outputs
+PASS ner_finetuning.ipynb: no execution errors
+PASS IE evaluated on at least 30 gold sentences
+PASS IE exact character-span metrics independently recomputed from JSON mentions
+PASS IE evaluation has gold entities
+PASS ie_evaluation.csv matches ie_evaluation.json
+PASS at least 5 FP, 5 FN and 5 boundary error examples
+PASS 3 exact-surface forms have different gold entity types
+PASS checkpoint_verification.json: provenance/checkpoint verification passed
+PASS initial_encoder_provenance.json: provenance/checkpoint verification passed
+PASS prepared and original upstream tokenizers agree on the entire test set
+PASS source byte hashes match assets_manifest.json
+PASS downloaded model/data hashes match assets_manifest.json
+
+53/53 checks passed

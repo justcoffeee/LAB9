@@ -1,0 +1,225 @@
+{
+  "n_checks": 53,
+  "n_passed": 53,
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "deliverable exists and is non-empty: README.md",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: calculations.md",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: prediction.md",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: baseline_ner.py",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: tokenizer_alignment.ipynb",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: ner_finetuning.ipynb",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: results.csv",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: entity_metrics.csv",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: entity_length_analysis.png",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: confusion_matrix.png",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: error_analysis.md",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: information_extraction.py",
+      "ok": true
+    },
+    {
+      "check": "deliverable exists and is non-empty: reflection.md",
+      "ok": true
+    },
+    {
+      "check": "confusion_matrix.png is a valid PNG",
+      "ok": true
+    },
+    {
+      "check": "entity_length_analysis.png is a valid PNG",
+      "ok": true
+    },
+    {
+      "check": "partial New York prediction is an entity FP and FN",
+      "ok": true
+    },
+    {
+      "check": "baseline prediction spans match metrics JSON",
+      "ok": true
+    },
+    {
+      "check": "baseline entity F1 recomputes exactly",
+      "ok": true
+    },
+    {
+      "check": "transformer prediction spans match metrics JSON",
+      "ok": true
+    },
+    {
+      "check": "transformer entity F1 recomputes exactly",
+      "ok": true
+    },
+    {
+      "check": "results.csv contains the baseline test F1",
+      "ok": true
+    },
+    {
+      "check": "results.csv contains the transformer test F1",
+      "ok": true
+    },
+    {
+      "check": "entity_metrics.csv has one OVERALL row",
+      "ok": true
+    },
+    {
+      "check": "entity_metrics.csv OVERALL F1 matches results.csv",
+      "ok": true
+    },
+    {
+      "check": "entity_metrics.csv has all four entity types",
+      "ok": true
+    },
+    {
+      "check": "entity_metrics.csv has all four length buckets",
+      "ok": true
+    },
+    {
+      "check": "confusion matrix is 9x9",
+      "ok": true
+    },
+    {
+      "check": "confusion matrix totals equal test token count",
+      "ok": true
+    },
+    {
+      "check": "confusion matrix diagonal equals published token accuracy",
+      "ok": true
+    },
+    {
+      "check": "confusion_matrix.json matches the .npy matrix",
+      "ok": true
+    },
+    {
+      "check": "test_predictions.json: labels and spans agree with official test data",
+      "ok": true
+    },
+    {
+      "check": "baseline_test_predictions.json: labels and spans agree with official test data",
+      "ok": true
+    },
+    {
+      "check": "transformer_propagate_test_predictions.json: labels and spans agree with official test data",
+      "ok": true
+    },
+    {
+      "check": "Strategy A alignment is exact on 1421 words",
+      "ok": true
+    },
+    {
+      "check": "official split sizes and unique row IDs within each split",
+      "ok": true
+    },
+    {
+      "check": "official train/validation/test file hashes match pinned assets",
+      "ok": true
+    },
+    {
+      "check": "tokenizer_alignment.ipynb: every code cell has an execution count",
+      "ok": true
+    },
+    {
+      "check": "tokenizer_alignment.ipynb: cells contain real outputs",
+      "ok": true
+    },
+    {
+      "check": "tokenizer_alignment.ipynb: no execution errors",
+      "ok": true
+    },
+    {
+      "check": "ner_finetuning.ipynb: every code cell has an execution count",
+      "ok": true
+    },
+    {
+      "check": "ner_finetuning.ipynb: cells contain real outputs",
+      "ok": true
+    },
+    {
+      "check": "ner_finetuning.ipynb: no execution errors",
+      "ok": true
+    },
+    {
+      "check": "IE evaluated on at least 30 gold sentences",
+      "ok": true
+    },
+    {
+      "check": "IE exact character-span metrics independently recomputed from JSON mentions",
+      "ok": true
+    },
+    {
+      "check": "IE evaluation has gold entities",
+      "ok": true
+    },
+    {
+      "check": "ie_evaluation.csv matches ie_evaluation.json",
+      "ok": true
+    },
+    {
+      "check": "at least 5 FP, 5 FN and 5 boundary error examples",
+      "ok": true
+    },
+    {
+      "check": "3 exact-surface forms have different gold entity types",
+      "ok": true
+    },
+    {
+      "check": "checkpoint_verification.json: provenance/checkpoint verification passed",
+      "ok": true
+    },
+    {
+      "check": "initial_encoder_provenance.json: provenance/checkpoint verification passed",
+      "ok": true
+    },
+    {
+      "check": "prepared and original upstream tokenizers agree on the entire test set",
+      "ok": true
+    },
+    {
+      "check": "source byte hashes match assets_manifest.json",
+      "ok": true
+    },
+    {
+      "check": "downloaded model/data hashes match assets_manifest.json",
+      "ok": true
+    }
+  ],
+  "hashes": {
+    "results.csv": "7d5ebf1627a2b6128fadd5fd296ec5a4547ac17c91ebddcde63a219dc3777c17",
+    "entity_metrics.csv": "96365287aa1f5080efd09e601d0d2345f1847f26ca1ecf971aa2f517644e9f6d",
+    "error_analysis.md": "abafee297e5da8c78f1f59f4d06936b7610d3d9e560ce3e433e34876b1b8b2a6",
+    "predictions\\test_predictions.json": "4f979ff7dda7fd606b747db7e5622927941d39ea2c958f99453316b7f1c41996"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "verified_utc": "2026-11-18T08:03:01.634511+00:00",
+  "checks": [
+    {
+      "tag": "main",
+      "checkpoint_sha256": "a2cebc9c6d0121c80ac81326a5da3c8268ac90c6cd90a9741cab3255d55d4f08",
+      "test_sentences": 3453,
+      "word_prediction_mismatches": 0,
+      "entity_f1_recomputed": 0.9130090597238105,
+      "entity_f1_recorded": 0.9130090597238105,
+      "exact_match": true
+    },
+    {
+      "tag": "propagate",
+      "checkpoint_sha256": "2958a6a161e3e2da7c6e8feb5cbdad1c095c6e0996a2285c9b27a68729bb18fc",
+      "test_sentences": 3453,
+      "word_prediction_mismatches": 0,
+      "entity_f1_recomputed": 0.9140899508081518,
+      "entity_f1_recorded": 0.9140899508081518,
+      "exact_match": true
+    }
+  ],
+  "all_passed": true
+}

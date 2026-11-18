@@ -1,0 +1,3 @@
+strategy,epochs,best_epoch,best_dev_entity_f1,test_entity_f1,test_precision,test_recall,subwords_per_word,split_words,truncated_sentences,train_seconds,notes
+A: first subword (IGNORE rest),3,3,0.9486,0.913,0.9072,0.9189,1.3385,34288,1,630.9,"3 epochs, same hyperparameters"
+B: propagate I-X,3,3,0.9492,0.9141,0.9071,0.9212,1.3385,34288,1,636.1,"3 epochs, same hyperparameters"

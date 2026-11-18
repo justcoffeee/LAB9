@@ -1,0 +1,182 @@
+{
+  "model": "google-bert/bert-base-cased",
+  "tag": "smoke",
+  "strategy": "first",
+  "max_len": 128,
+  "batch_size": 16,
+  "learning_rate": 3e-05,
+  "epochs": 1,
+  "warmup_ratio": 0.1,
+  "weight_decay": 0.01,
+  "seed": 42,
+  "device": "cuda",
+  "best_epoch": 1,
+  "best_dev_entity_f1": 0.06451612903225806,
+  "train_seconds": 2.1,
+  "train_stats": {
+    "n_sentences": 32,
+    "truncated_sentences": 0,
+    "split_words": 78,
+    "n_subwords": 891,
+    "subwords_per_word": 1.188
+  },
+  "dev_stats": {
+    "n_sentences": 32,
+    "truncated_sentences": 0,
+    "split_words": 105,
+    "n_subwords": 900,
+    "subwords_per_word": 1.2949640287769784
+  },
+  "test_stats": {
+    "n_sentences": 32,
+    "truncated_sentences": 0,
+    "split_words": 73,
+    "n_subwords": 743,
+    "subwords_per_word": 1.2200328407224958
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.913481593132019,
+      "dev_loss": 1.8240108489990234,
+      "dev_token_accuracy": 0.6244604316546762,
+      "dev_token_f1": 0.04651162790697675,
+      "dev_entity_precision": 0.058394160583941604,
+      "dev_entity_recall": 0.07207207207207207,
+      "dev_entity_f1": 0.06451612903225806,
+      "train_seconds": 2.0
+    }
+  ],
+  "splits": {
+    "validation": {
+      "entity": {
+        "tp": 8,
+        "fp": 129,
+        "fn": 103,
+        "precision": 0.058394160583941604,
+        "recall": 0.07207207207207207,
+        "f1": 0.06451612903225806,
+        "support": 111,
+        "predicted": 137
+      },
+      "by_type": {
+        "PER": {
+          "support": 40,
+          "predicted": 35,
+          "tp": 0,
+          "fp": 35,
+          "fn": 40,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "ORG": {
+          "support": 44,
+          "predicted": 39,
+          "tp": 7,
+          "fp": 32,
+          "fn": 37,
+          "precision": 0.1794871794871795,
+          "recall": 0.1590909090909091,
+          "f1": 0.16867469879518074
+        },
+        "LOC": {
+          "support": 20,
+          "predicted": 19,
+          "tp": 0,
+          "fp": 19,
+          "fn": 20,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "MISC": {
+          "support": 7,
+          "predicted": 44,
+          "tp": 1,
+          "fp": 43,
+          "fn": 6,
+          "precision": 0.022727272727272728,
+          "recall": 0.14285714285714285,
+          "f1": 0.0392156862745098
+        }
+      },
+      "token_accuracy": 0.6244604316546762,
+      "token_prf": {
+        "tp": 7,
+        "fp": 141,
+        "fn": 146,
+        "precision": 0.0472972972972973,
+        "recall": 0.0457516339869281,
+        "f1": 0.04651162790697675
+      },
+      "n_sentences": 32,
+      "n_tokens": 695
+    },
+    "test": {
+      "entity": {
+        "tp": 1,
+        "fp": 43,
+        "fn": 67,
+        "precision": 0.022727272727272728,
+        "recall": 0.014705882352941176,
+        "f1": 0.017857142857142856,
+        "support": 68,
+        "predicted": 44
+      },
+      "by_type": {
+        "PER": {
+          "support": 22,
+          "predicted": 3,
+          "tp": 0,
+          "fp": 3,
+          "fn": 22,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "ORG": {
+          "support": 2,
+          "predicted": 5,
+          "tp": 0,
+          "fp": 5,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "LOC": {
+          "support": 30,
+          "predicted": 4,
+          "tp": 0,
+          "fp": 4,
+          "fn": 30,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "MISC": {
+          "support": 14,
+          "predicted": 32,
+          "tp": 1,
+          "fp": 31,
+          "fn": 13,
+          "precision": 0.03125,
+          "recall": 0.07142857142857142,
+          "f1": 0.043478260869565216
+        }
+      },
+      "token_accuracy": 0.8029556650246306,
+      "token_prf": {
+        "tp": 0,
+        "fp": 46,
+        "fn": 92,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "n_sentences": 32,
+      "n_tokens": 609
+    }
+  }
+}

@@ -1,0 +1,149 @@
+wrote C:\Code\NLP\lab9\results.csv
+wrote C:\Code\NLP\lab9\entity_metrics.csv
+wrote confusion_matrix.png
+wrote entity_length_analysis.png
+wrote learning_curves.png
+tokenization: 1.3667 subwords/word, 0.1785 of words are split
+wrote error_analysis.md (531 FP, 458 FN, 169 boundary pairs)
+wrote C:\Code\NLP\lab9\alignment_ablation.csv
+{
+  "baseline_test_f1": 0.7437,
+  "transformer_test_f1": 0.913,
+  "improvement_f1": 0.1693,
+  "tokenization": {
+    "n_sentences": 3453,
+    "n_words": 46435,
+    "n_subwords": 63461,
+    "n_split_words": 8287,
+    "ratio_subwords_per_word": 1.3666630774200494,
+    "split_rate": 0.17846452029718962,
+    "short_sentences": {
+      "n": 2374,
+      "ratio": 1.6959509658246656
+    },
+    "long_sentences": {
+      "n": 1079,
+      "ratio": 1.1910312716705742
+    },
+    "entity_words_split_rate": 0.45278599605522685,
+    "non_entity_words_split_rate": 0.12039767241604259,
+    "entity_words": 8112,
+    "non_entity_words": 38323,
+    "max_tokens": 146,
+    "sentences_over_128_subwords": 2,
+    "most_split_words": [
+      [
+        "'s",
+        330
+      ],
+      [
+        "1996-12-06",
+        165
+      ],
+      [
+        "--",
+        58
+      ],
+      [
+        "U.S.",
+        51
+      ],
+      [
+        "1996-12-07",
+        51
+      ],
+      [
+        "SOCCER",
+        42
+      ],
+      [
+        "NEW",
+        37
+      ],
+      [
+        "DIVISION",
+        35
+      ],
+      [
+        "LONDON",
+        31
+      ],
+      [
+        "n't",
+        28
+      ],
+      [
+        "RESULTS",
+        25
+      ],
+      [
+        "1/2",
+        24
+      ],
+      [
+        "CUP",
+        22
+      ],
+      [
+        "YORK",
+        22
+      ],
+      [
+        "1.",
+        20
+      ]
+    ],
+    "most_common_continuations": [
+      [
+        "-",
+        1368
+      ],
+      [
+        ".",
+        1108
+      ],
+      [
+        "##s",
+        341
+      ],
+      [
+        "s",
+        334
+      ],
+      [
+        "12",
+        246
+      ],
+      [
+        ",",
+        233
+      ],
+      [
+        "##S",
+        179
+      ],
+      [
+        "06",
+        170
+      ],
+      [
+        "##O",
+        158
+      ],
+      [
+        "##ON",
+        131
+      ],
+      [
+        "1",
+        127
+      ],
+      [
+        "000",
+        124
+      ],
+      [
+        "/",
+        115
+      ],
+     

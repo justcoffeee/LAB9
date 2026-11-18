@@ -1,0 +1,4 @@
+model,split,precision,recall,f1,token_accuracy,token_f1,support,predicted,n_sentences,n_tokens
+Baseline (token features + logistic regression),test,0.7142,0.7757,0.7437,0.9575,0.8032,5648,6134,3453,46435
+BERT-base-cased fine-tuned (Strategy A: first subword),test,0.9072,0.9189,0.913,0.9824,0.9237,5648,5721,3453,46435
+BERT-base-cased fine-tuned (Strategy B: propagate I-X),test,0.9071,0.9212,0.9141,0.9832,0.9268,5648,5736,3453,46435

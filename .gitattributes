@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Preserve source-byte hashes recorded in assets_manifest.json.
+*.py -text
+*.png binary
+*.npy binary
+*.npz binary
+*.log -whitespace
+*.md whitespace=-blank-at-eol

@@ -1,0 +1,13 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 1.913481593132019,
+    "dev_loss": 1.8240108489990234,
+    "dev_token_accuracy": 0.6244604316546762,
+    "dev_token_f1": 0.04651162790697675,
+    "dev_entity_precision": 0.058394160583941604,
+    "dev_entity_recall": 0.07207207207207207,
+    "dev_entity_f1": 0.06451612903225806,
+    "train_seconds": 2.0
+  }
+]
